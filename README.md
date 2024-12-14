@@ -14,8 +14,12 @@ Why use this tool?
 Renaming an Unreal Engine project manually can be tedious and error-prone, as it requires updating multiple files and API references. This tool automates the entire process, ensuring consistency and saving valuable time.
 Screenshots
 
+![grafik](https://github.com/user-attachments/assets/6fda1e73-4dc5-489c-898b-dd7092391dcc)
+![grafik](https://github.com/user-attachments/assets/27160676-09ea-4a9b-9ad1-6e28372e952f)
+![grafik](https://github.com/user-attachments/assets/bd611b62-3810-4acb-bf5b-530ea61a7b43)
+![grafik](https://github.com/user-attachments/assets/d35618de-13d5-472c-ae78-32cf6d2571dc)
 
-![Screenshot 2024-12-14 181939](https://github.com/user-attachments/assets/6d98c08d-6506-4661-bfaa-be408e03b057)
+
 
 Requirements
 
