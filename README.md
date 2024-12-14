@@ -26,3 +26,6 @@ Requirements
     Python 3.7 or later
     Dependencies:
         tkinter (part of Python’s standard library, no additional installation needed)
+
+VideoTest:
+https://www.youtube.com/watch?v=r4NnXzruVg8
