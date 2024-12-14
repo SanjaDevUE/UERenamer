@@ -4,16 +4,16 @@ import tkinter as tk
 from tkinter import filedialog, messagebox
 
 def rename_folder_and_file_names(project_path, old_name, new_name):
-    # Rekursives Umbenennen von Ordnern und Dateien
+    
     for root, dirs, files in os.walk(project_path, topdown=False):
-        # Ordner umbenennen
+        
         for dir_name in dirs:
             if old_name in dir_name:
                 old_dir_path = os.path.join(root, dir_name)
                 new_dir_path = os.path.join(root, dir_name.replace(old_name, new_name))
                 os.rename(old_dir_path, new_dir_path)
 
-        # Dateien umbenennen
+        
         for file_name in files:
             if old_name in file_name:
                 old_file_path = os.path.join(root, file_name)
@@ -21,7 +21,7 @@ def rename_folder_and_file_names(project_path, old_name, new_name):
                 os.rename(old_file_path, new_file_path)
 
 def rename_project_files_and_references(project_path, old_name, new_name):
-    # Durchlaufe alle Dateien und ersetze interne Referenzen
+    
     for root, dirs, files in os.walk(project_path):
         for file in files:
             file_path = os.path.join(root, file)
@@ -31,28 +31,28 @@ def rename_project_files_and_references(project_path, old_name, new_name):
                 except Exception as e:
                     messagebox.showerror("Error", f"Error updating file: {file_path}\n{e}")
 
-    # Ordner und Dateinamen umbenennen
+   
     rename_folder_and_file_names(project_path, old_name, new_name)
 
 def update_file_references(file_path, old_name, new_name):
     try:
-        # Datei mit UTF-8 öffnen
+        
         with open(file_path, 'r', encoding='utf-8') as file:
             content = file.read()
     except UnicodeDecodeError:
-        # Fallback auf latin-1
+        
         with open(file_path, 'r', encoding='latin-1') as file:
             content = file.read()
 
-    # Ersetze alle Vorkommen des alten Namens
+    
     content = content.replace(old_name, new_name)
 
-    # Ersetze API-Referenzen
+    
     old_api_name = f"{old_name.upper()}_API"
     new_api_name = f"{new_name.upper()}_API"
     content = content.replace(old_api_name, new_api_name)
 
-    # Datei zurückschreiben
+    
     with open(file_path, 'w', encoding='utf-8') as file:
         file.write(content)
 
