@@ -1,3 +1,4 @@
+[![GitHub release](https://img.shields.io/github/v/release/SanjaDevue/UERenamer)](https://github.com/SanjaDevue/UERenamer/releases)
 Unreal Project Renamer
 
 Unreal Project Renamer is a user-friendly Python tool with a graphical user interface (GUI), designed specifically for Unreal Engine projects. It allows developers to seamlessly rename their project and update all associated files, folders, and API references.
