@@ -1,4 +1,4 @@
-![GitHub release downloads](https://img.shields.io/github/downloads/SanjaDev/UERenamer/latest/total)
+![GitHub release downloads](https://img.shields.io/github/downloads/SanjaDevUE/UERenamer/latest/total)
 
 
 Unreal Project Renamer
